@@ -38,8 +38,8 @@ class RotinaIncPv
     data oRetItens
 
     method new_pedidoInc() constructor
-    method Exec_pedidoInc()
     method get_pedidoInc()
+    method Exec_pedidoInc()
     method Exec_getPv()
 endclass
 
@@ -103,6 +103,6 @@ method get_pedidoInc() class RotinaIncPv
 
         AAdd( ::oPedidoVCab:aItens, oItem ) 
     Next nI
-     
+    ::oPedidoVCab:nOpc                := 3 
     ::oPedidoVCab:execInc_PedidoV()
 return 

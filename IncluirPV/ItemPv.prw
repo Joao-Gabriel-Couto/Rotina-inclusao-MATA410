@@ -9,10 +9,9 @@ class ItemPv
     data    cNItem
     data    cProduto
     data    cUnidade
-    data    cQuant
-    data    cPrecoUni
-    data    cPrcVen
-    data    cVlrTotal
+    data    nQuant
+    data    nPrcVen
+    data    nVlrTotal
     data    cTipoSaida
 
     method new_ItemPv() constructor
@@ -26,10 +25,9 @@ method new_ItemPv() class ItemPv
     ::cNItem          := ""
     ::cProduto        := ""
     ::cUnidade        := ""
-    ::cQuant          := 0
-    ::cPrecoUni       := 0
-    ::cPrcVen         := 0
-    ::cVlrTotal       := 0
+    ::nQuant           := 0
+    ::nPrcVen         := 0
+    ::nVlrTotal       := 0
     ::cTipoSaida      := ""
 return
 
@@ -39,8 +37,8 @@ method itemPv_SetAlias() class ItemPv
     ::cNItem            := SC6->C6_ITEM
     ::cProduto          := SC6->C6_PRODUTO
     ::cUnidade          := SC6->C6_UM    
-    ::cQuant            := SC6->C6_QTDVEN
-    ::cPrcVen           := SC6->C6_PRCVEN
-    ::cVlrTotal         := SC6->C6_VALOR
+    ::nQuant            := SC6->C6_QTDVEN
+    ::nPrcVen           := SC6->C6_PRCVEN
+    ::nVlrTotal         := SC6->C6_VALOR
     ::cTipoSaida        := SC6->C6_TES
 return
